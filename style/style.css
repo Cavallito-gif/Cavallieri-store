@@ -70,3 +70,31 @@ header {
 #mobile_menu, #mobile_btn{
     display: none;
 }
+
+@media (max-width:770px) {
+    #mobile_btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+    }
+    #nav_list, .btn-default{
+        display: none;
+        cursor: pointer;
+    }
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+    #mobile_nav_list .nav_item {
+        list-style: none;
+        text-align: center;
+    }
+}
