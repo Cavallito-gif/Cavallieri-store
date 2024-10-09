@@ -19,6 +19,10 @@ header {
     padding: 28px 8%;
 }
 
+section {
+    padding: 28px 8%;
+}
+
 #navbar {
     display: flex;
     width: 100%;
@@ -37,7 +41,7 @@ header {
     gap: 48px;
 }
 
-.nav_item  a {
+.nav_item a {
     text-decoration: none;
     color: #1d1d1dad;
     font-weight: 600;
@@ -63,38 +67,150 @@ header {
 }
 
 .btn-default:hover {
-     background-color: #84754E;
-     color: white;
+    background-color: #84754E;
+    color: white;
 }
 
-#mobile_menu, #mobile_btn{
+#mobile_menu,
+#mobile_btn {
     display: none;
 }
 
 @media (max-width:770px) {
-    #mobile_btn{
+    #mobile_btn {
         display: block;
         border: none;
         background-color: transparent;
         font-size: 1.5rem;
     }
-    #nav_list, .btn-default{
+
+    #nav_list,
+    .btn-default {
         display: none;
         cursor: pointer;
     }
+
     #mobile_menu.active {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     #mobile_nav_list {
         display: flex;
         flex-direction: column;
         gap: 12px;
         margin: 12px 0px;
     }
+
     #mobile_nav_list .nav_item {
         list-style: none;
         text-align: center;
     }
+}
+
+#home {
+    display: flex;
+    min-height: calc(100vh - 95px);
+    position: relative;
+}
+
+#cta {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title {
+    font-size: 3rem;
+    color: #1d1d1d;
+}
+
+span {
+    color: #52482f;
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons .btn-default:hover {
+    background-color: #84754E;
+    color: white;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.274);
+    border-radius: 12px;
+}
+
+.social-midia-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-midia-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.158);
+    transition: box-shadow .3s ease;
+}
+
+#whats:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 255, 42, 0.158);
+}
+
+#insta:hover {
+    box-shadow: 0px 0px 12px 8px rgba(247, 0, 255, 0.158);
+}
+
+#face:hover {
+    box-shadow: 0px 0px 12px 8px rgba(25, 0, 255, .158);
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+}
+
+#banner img {
+    width: 80%;
+    height: 100%;
+}
+
+.shape {
+    background-color: #ffe8b4;
+    width: 50%;
+    height: calc(100% - 28px);
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
