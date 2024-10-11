@@ -36,8 +36,8 @@ section {
 }
 
 #nav_logo {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
 }
 
 #nav_list {
@@ -82,6 +82,10 @@ section {
 }
 
 @media (max-width: 1170px) {
+    #nav_logo {
+        width: 100px;
+        height: 100px;
+    }
     #mobile_btn {
         display: block;
         border: none;
