@@ -16,7 +16,7 @@ body {
 
 header {
     width: 100%;
-    padding: 28px 8%;
+    padding: 20px 8%;
     position: sticky;
     top: 0;
     background-color: #fff9ea;
@@ -36,8 +36,8 @@ section {
 }
 
 #nav_logo {
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
 }
 
 #nav_list {
@@ -352,5 +352,3 @@ span {
     flex-direction: column;
     padding: 20px;
 }
-
-#testimonial
